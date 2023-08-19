@@ -1,0 +1,27 @@
+{
+//Auto Save
+"files.autoSave": "onWindowChange",
+    
+// Bracket-pair guides
+"editor.guides.bracketPairs": true,
+"editor.guides.bracketPairsHorizontal": true,
+"editor.guides.highlightActiveBracketPair": true,
+
+// Bracket-pair colorization
+"editor.bracketPairColorization.enabled": false, 
+"editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+
+// Indentation lines
+"editor.guides.indentation": true,
+
+//Theme
+"workbench.colorTheme": "Atom One Dark",
+"workbench.iconTheme": "vscode-icons",
+
+//Font
+"editor.fontFamily": "Fira Code",
+"editor.fontWeight": "normal",
+
+//Cursor
+"editor.cursorBlinking": "expand"
+}

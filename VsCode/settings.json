@@ -1,27 +1,31 @@
 {
 //Auto Save
-"files.autoSave": "onWindowChange",
+"files.autoSave": "afterDelay",
     
 // Bracket-pair guides
 "editor.guides.bracketPairs": true,
-"editor.guides.bracketPairsHorizontal": true,
-"editor.guides.highlightActiveBracketPair": true,
+"editor.guides.bracketPairsHorizontal": true,       // shows horizontal line
+"editor.guides.highlightActiveBracketPair": true,   // highlight both horizontal and vertical lines
 
 // Bracket-pair colorization
 "editor.bracketPairColorization.enabled": false, 
 "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
 
 // Indentation lines
-"editor.guides.indentation": true,
+"editor.guides.indentation": true,                   // shows vertical lines
 
 //Theme
-"workbench.colorTheme": "Atom One Dark",
-"workbench.iconTheme": "vscode-icons",
+"workbench.colorTheme": "Shades of Purple",
+"workbench.iconTheme": "material-icon-theme",
 
 //Font
-"editor.fontFamily": "Fira Code",
+"editor.fontFamily": "'Cascadia Code', Consolas, 'Courier New', monospace",
 "editor.fontWeight": "normal",
+"editor.wordWrap": "on",
+"editor.fontLigatures": "true",
 
-//Cursor
-"editor.cursorBlinking": "expand"
+"editor.cursorBlinking": "expand",
+"explorer.confirmDragAndDrop": false,
+"terminal.integrated.fontFamily": "'Cascadia Code', Consolas, 'Courier New', monospace",
+"notebook.output.fontFamily": "'Cascadia Code', Consolas, 'Courier New', monospace"
 }

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-sudo apt-get install vim gpg git neofetch dconf gnome-shell-extensions software-properties-common apt-transport-https gnome-tweaks python3 -y &&
+sudo apt-get install vim gpg git neofetch dconf-editor gnome-shell-extensions software-properties-common apt-transport-https gnome-tweaks python3 -y &&
 wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add - &&
 sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" &&
 sudo apt install code &&

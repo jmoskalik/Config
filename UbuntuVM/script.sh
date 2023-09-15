@@ -9,7 +9,7 @@ sudo apt install apt-transport-https &&
 sudo apt update &&
 sudo apt install code &&
 gnome-terminal -- code . &&
-gnome-terminal -- gsettings set org.gnome.desktop.interface icon-theme "Papirus-Dark"
+gnome-terminal -- gsettings set org.gnome.desktop.interface icon-theme "Papirus-Dark" &&
 gnome-terminal -- gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark' &&
 gnome-terminal -- gsettings set org.gnome.shell.extensions.dash-to-dock show-trash false &&
 gnome-terminal -- gsettings set org.gnome.shell.extensions.dash-to-dock dock-position BOTTOM &&

@@ -26,6 +26,7 @@
 
 "editor.cursorBlinking": "expand",
 "explorer.confirmDragAndDrop": false,
-"terminal.integrated.fontFamily": "'Cascadia Code', Consolas, 'Courier New', monospace",
-"notebook.output.fontFamily": "'Cascadia Code', Consolas, 'Courier New', monospace"
+    
+//Terminal
+"terminal.integrated.fontFamily": "'MesloLGS NF'",
 }

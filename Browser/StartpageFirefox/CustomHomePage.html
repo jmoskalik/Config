@@ -27,9 +27,34 @@
             color: #cdd6f4;
             font-family: CaskaydiaCoveNerdFont-Regular;
         }
+        .search-container {
+            margin: 20px auto;
+            max-width: 400px;
+            background-color: transparent;
+            
+        }
+        form {
+            display: flex;
+            align-items: center;
+            background-color: #1e1e2e;
+        }
+        
+        input[type="text"] {
+            width: 300px;
+            padding: 8px;
+            background-color: transparent;
+            text-decoration: none;
+            border-width: 2px;
+            border-color: #cdd6f4;
+            font-family: CaskaydiaCoveNerdFont-Regular;
+            color: #cdd6f4;
+            border-style: solid;
+            outline: none;
+            
+        }
         
         #pagesIcons {
-            margin: 2vh;
+
             display: flex;
             align-items: center;
         }
@@ -58,7 +83,12 @@
 <body>
     <div id = "clock" onload="currentTimeDate()"></div>
     <div id = "date" onload="currentTimeDate()"></div>
-    <div id = "pagesIcons">
+    <div class="search-container">
+        <form action="https://duckduckgo.com/" method="get" target="_blank">
+            <input type="text" name="q" placeholder="Czego szukasz?">
+        </form>
+    </div>
+    <!-- <div id = "pagesIcons">
         <a href="facebook.com/">
             <span class="nf-md-facebook">󰈌</span>
         </a>
@@ -71,7 +101,8 @@
         <a href="https://www.youtube.com/">
             <span class="nf-md-youtube">󰗃</span>
         </a>
-    </div>
+    </div> -->
+    
     
 
     <script type="text/javascript">

@@ -57,17 +57,17 @@ def maximize_window_by_title(window_title):
     else:
         print("Window not found.")
 
-lwpath = check_for_lnk("LibreWolf")
+lwpath = check_for_lnk("Firefox")
 if lwpath is not None:
     lw_executable = get_target_executable_from_shortcut(lwpath)
     subprocess.Popen([lw_executable, '--new-window', 'https://music.youtube.com/'])
-    move_and_resize_window_by_title("YouTube Music — LibreWolf", -1088, 681, 1092, 632)
+    move_and_resize_window_by_title("YouTube Music — Mozilla Firefox", -1088, 681, 1092, 632)
     subprocess.Popen([lw_executable, '--new-window', 'https://messenger.com/'])
-    move_and_resize_window_by_title("Messenger — LibreWolf", -1087, -18, 1094, 704)
+    move_and_resize_window_by_title("Messenger — Mozilla Firefox", -1087, -18, 1094, 704)
     subprocess.Popen([lw_executable, '--new-window', 'https://discord.com/channels/@me'])
-    move_and_resize_window_by_title("Discord — LibreWolf", -1086, -562, 1092, 552)
+    move_and_resize_window_by_title("Discord — Mozilla Firefox", -1086, -562, 1092, 552)
     subprocess.Popen([lw_executable])
-    move_and_resize_window_by_title("Strona Główna — LibreWolf", 0, 0, 500, 500)
-    maximize_window_by_title("Strona Główna — LibreWolf")
+    # move_and_resize_window_by_title("Strona Główna — Mozilla Firefox", 0, 0, 500, 500)
+    maximize_window_by_title("Strona Główna — Mozilla Firefox")
 else:
-    print("LibreWolf shortcut not found.")
+    print("Mozilla Firefox shortcut not found.")

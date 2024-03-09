@@ -1,0 +1,31 @@
+version: '2'
+volumes:
+  octoprint-1:
+  octoprint-2:
+services:
+  prusa_mini:
+    image: octoprint/octoprint
+    ports:
+      - 5001:80
+    devices:
+      - /dev/ttyACM0:/dev/ttyACM0
+      - /dev/video0:/dev/video0
+    volumes:
+      - octoprint-1:/home/octoprint/.octoprint
+    environment:
+      - MJPG_STREAMER_INPUT=-n -r 1280x720 -f 30
+      - ENABLE_MJPG_STREAMER=true
+    restart: always
+  prusa_vb:
+    image: octoprint/octoprint
+    ports:
+      - 5002:80
+    devices:
+      - /dev/ttyACM0:/dev/ttyACM0
+      - /dev/video2:/dev/video0
+    volumes:
+      - octoprint-2:/home/octoprint/.octoprint
+    environment:
+      - MJPG_STREAMER_INPUT=-n -r 1280x720 -f 30
+      - ENABLE_MJPG_STREAMER=true
+    restart: always

@@ -18,3 +18,8 @@ sudo adduser $SERVER_USER sudo && su $SERVER_USER && cd
 ```
 ## Checking for printers and web cameras:
 python3 -m serial.tools.miniterm
+
+## Plugins:
+https://github.com/TheSpaghettiDetective/OctoPrint-Obico/archive/master.zip \
+
+https://github.com/jneilliii/OctoPrint-BGCode/archive/master.zip

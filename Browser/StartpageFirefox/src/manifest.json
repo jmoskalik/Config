@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "CustomStartPage",
   "description": "CustomStartPage",
-  "version": "0.1",
+  "version": "0.2",
   "chrome_url_overrides": {
     "newtab": "CustomStartPage.html"
   },
